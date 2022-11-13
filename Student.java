@@ -1,17 +1,22 @@
+package entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 
 public class Student {
-     String name;
-     int Roll_no;
-     
-     
-	public static void main(String[] args) {
-	
-        Student st = new Student();
-        st.name="jhon";
-        st.Roll_no = 2;
-        System.out.println(st.name);
-        System.out.println(st.Roll_no);
-	}
+
+	 private long rno;
+
+     private String firstName;
+
+     private String lastName;
+
+     private String address;
 
 }
 
